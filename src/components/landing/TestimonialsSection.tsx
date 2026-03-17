@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const TESTIMONIALS = [
   {
-    quote: "Economizei R$80 no primeiro mês só usando o detector de preço",
+    quote: "Em 2 semanas aprendi mais sobre carne do que em 30 anos comprando no açougue. Hoje eu sei o que estou pagando.",
     name: "Carlos M.",
     city: "São Paulo",
     rotation: "rotate(1deg)",
@@ -10,7 +10,7 @@ const TESTIMONIALS = [
     tailLeft: 28,
   },
   {
-    quote: "Finalmente sei a diferença entre acém e paleta!",
+    quote: "Hoje vou ao açougue sozinha e sei exatamente o que pedir — sem precisar perguntar pra ninguém. Isso não tem preço.",
     name: "Fernanda R.",
     city: "Belo Horizonte",
     rotation: "rotate(-1deg)",
@@ -18,7 +18,7 @@ const TESTIMONIALS = [
     tailLeft: 32,
   },
   {
-    quote: "Nunca mais errei o churrasco de domingo",
+    quote: "Meu churrasco melhorou porque aprendi as técnicas certas de vez. Não sigo receita — entendo o que estou fazendo.",
     name: "Rafael S.",
     city: "Porto Alegre",
     rotation: "rotate(1deg)",
@@ -70,7 +70,7 @@ function TestimonialCard({
           style={{
             fontFamily: "Patrick Hand, cursive",
             color: "#2d2d2d",
-            fontSize: "18px",
+            fontSize: "16px",
             lineHeight: 1.5,
             marginBottom: 0,
           }}
@@ -158,7 +158,7 @@ function TestimonialCard({
 
 export function TestimonialsSection() {
   return (
-    <section id="depoimentos" className="py-20 max-w-6xl mx-auto px-4">
+    <section id="depoimentos" className="py-12 md:py-20 max-w-6xl mx-auto px-4">
       {/* Title */}
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -166,9 +166,9 @@ export function TestimonialsSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d" }}
-        className="text-4xl md:text-5xl mb-16 text-center"
+        className="text-3xl md:text-5xl mb-8 md:mb-16 text-center"
       >
-        O que estão falando 💬
+        Quem aprendeu conta 💬
       </motion.h2>
 
       {/* Cards grid */}
@@ -177,7 +177,7 @@ export function TestimonialsSection() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid md:grid-cols-3 gap-8"
+        className="grid md:grid-cols-3 gap-10 md:gap-8"
       >
         {TESTIMONIALS.map((t, i) => (
           <TestimonialCard key={i} {...t} />

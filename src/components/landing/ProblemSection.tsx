@@ -3,19 +3,19 @@ import { motion } from "framer-motion";
 const PROBLEMS = [
   {
     emoji: "😰",
-    text: "Chegou no açougue sem saber qual corte levar",
+    text: "Chegou no açougue sem saber qual corte levar — e ninguém nunca te ensinou a diferença",
     rotation: "rotate(1deg)",
     radius: "255px 15px 225px 15px / 15px 225px 15px 255px",
   },
   {
     emoji: "💸",
-    text: "Pagou caro sem saber se o preço estava justo",
+    text: "Pagou caro sem entender se o preço estava justo — porque avaliar carne não se aprende por osmose",
     rotation: "rotate(-1deg)",
     radius: "15px 255px 15px 225px / 225px 15px 255px 15px",
   },
   {
     emoji: "🍖",
-    text: "Errou no preparo e a carne ficou dura ou sem sabor",
+    text: "Errou no preparo e a carne ficou dura — porque ninguém explica qual técnica funciona pra cada corte",
     rotation: "rotate(1deg)",
     radius: "200px 25px 180px 20px / 20px 180px 25px 200px",
   },
@@ -33,7 +33,7 @@ const itemVariants = {
 
 export function ProblemSection() {
   return (
-    <section className="py-20 max-w-6xl mx-auto px-4">
+    <section className="py-12 md:py-20 max-w-6xl mx-auto px-4">
       {/* Label */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -67,9 +67,9 @@ export function ProblemSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.1 }}
         style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d" }}
-        className="text-4xl md:text-5xl mb-12"
+        className="text-3xl md:text-5xl mb-6 md:mb-12"
       >
-        Você já passou por isso?
+        O problema é simples: ninguém te ensinou sobre carne.
       </motion.h2>
 
       {/* Cards grid */}
@@ -78,7 +78,7 @@ export function ProblemSection() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid md:grid-cols-3 gap-8"
+        className="grid md:grid-cols-3 gap-5 md:gap-8"
       >
         {PROBLEMS.map((problem, i) => (
           <ProblemCard key={i} {...problem} />
@@ -109,7 +109,7 @@ function ProblemCard({
         borderRadius: radius,
         boxShadow: "4px 4px 0px 0px #2d2d2d",
         transform: rotation,
-        padding: "32px 24px",
+        padding: "20px 16px",
         position: "relative",
         transition: "transform 100ms, box-shadow 100ms",
       }}

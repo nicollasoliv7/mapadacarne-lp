@@ -1,3 +1,4 @@
+import { CountdownBanner } from "@/components/landing/CountdownBanner";
 import { Navbar } from "@/components/landing/Navbar";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { ProblemSection } from "@/components/landing/ProblemSection";
@@ -6,6 +7,7 @@ import { HowItWorksSection } from "@/components/landing/HowItWorksSection";
 import { TestimonialsSection } from "@/components/landing/TestimonialsSection";
 import { CTASection } from "@/components/landing/CTASection";
 import { Footer } from "@/components/landing/Footer";
+import { ProgressiveBlur } from "@/components/landing/ProgressiveBlur";
 
 export default function LandingPage() {
   return (
@@ -18,6 +20,7 @@ export default function LandingPage() {
         overflowX: "hidden",
       }}
     >
+      <CountdownBanner />
       <Navbar />
       <HeroSection />
       <ProblemSection />
@@ -26,6 +29,7 @@ export default function LandingPage() {
       <TestimonialsSection />
       <CTASection />
       <Footer />
+      <ProgressiveBlur />
     </div>
   );
 }

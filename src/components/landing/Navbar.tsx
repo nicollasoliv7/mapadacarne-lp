@@ -60,10 +60,10 @@ export function Navbar() {
           <WobblyButton
             variant="accent"
             size="sm"
-            onClick={() => scrollTo("cta")}
+            onClick={() => window.open("https://www.ggcheckout.com/checkout/v3/ZGHlTiJZ08FrjoEDUaHU", "_blank")}
             borderRadius="255px 15px 225px 15px / 15px 225px 15px 255px"
           >
-            Começar grátis
+            R$9,90 vitalício
           </WobblyButton>
         </div>
 
@@ -104,11 +104,11 @@ export function Navbar() {
           <WobblyButton
             variant="accent"
             size="sm"
-            onClick={() => scrollTo("cta")}
+            onClick={() => window.open("https://www.ggcheckout.com/checkout/v3/ZGHlTiJZ08FrjoEDUaHU", "_blank")}
             className="w-full mt-2"
             borderRadius="15px 255px 15px 225px / 225px 15px 255px 15px"
           >
-            Começar grátis
+            R$9,90 vitalício
           </WobblyButton>
         </div>
       )}

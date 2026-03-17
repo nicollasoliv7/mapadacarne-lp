@@ -6,42 +6,42 @@ const FEATURES = [
   {
     Icon: Bot,
     title: "Assistente IA",
-    desc: "Descreva o que quer cozinhar e receba o corte ideal",
+    desc: "Pergunte o que quiser e entenda o porquê — não só o quê. Cada resposta te deixa mais inteligente.",
     rotation: "rotate(1deg)",
     radius: "255px 15px 225px 15px / 15px 225px 15px 255px",
   },
   {
     Icon: Map,
     title: "Mapa de Cortes",
-    desc: "Biblioteca visual de todos os cortes brasileiros",
+    desc: "Aprenda a reconhecer e nomear cada corte brasileiro de cabeça — sem precisar consultar nada.",
     rotation: "rotate(-1deg)",
     radius: "15px 255px 15px 225px / 225px 15px 255px 15px",
   },
   {
     Icon: DollarSign,
     title: "Detector de Preço",
-    desc: "Saiba na hora se o preço está caro ou barato",
+    desc: "Descubra se o preço tá justo e entenda como avaliar — pra você saber sozinho na próxima vez.",
     rotation: "rotate(1deg)",
     radius: "200px 25px 180px 20px / 20px 180px 25px 200px",
   },
   {
     Icon: Camera,
     title: "Scanner de Carne",
-    desc: "Fotografe no açougue e receba análise instantânea",
+    desc: "Fotografe no açougue, receba a análise e aprenda a ler a carne com os próprios olhos.",
     rotation: "rotate(-1deg)",
     radius: "255px 15px 225px 15px / 15px 225px 15px 255px",
   },
   {
     Icon: ChefHat,
     title: "Guias de Preparo",
-    desc: "Técnicas por método: churrasco, forno, air fryer e mais",
+    desc: "Domine as técnicas certas pra cada corte — churrasco, forno, air fryer. Você aprende, não segue receita cega.",
     rotation: "rotate(1deg)",
     radius: "15px 255px 15px 225px / 225px 15px 255px 15px",
   },
   {
     Icon: BookOpen,
     title: "Biblioteca de Carnes",
-    desc: "Enciclopédia completa de cortes com origem e usos",
+    desc: "Construa seu vocabulário de carne uma vez e use para sempre — origem, usos e características de cada corte.",
     rotation: "rotate(-1deg)",
     radius: "200px 25px 180px 20px / 20px 180px 25px 200px",
   },
@@ -80,7 +80,7 @@ function FeatureCard({
         borderRadius: radius,
         boxShadow: "4px 4px 0px 0px #2d2d2d",
         transform: rotation,
-        padding: "32px 24px",
+        padding: "16px 14px",
         position: "relative",
         transition: "transform 100ms, box-shadow 100ms",
       }}
@@ -103,8 +103,8 @@ function FeatureCard({
         {/* Icon in wobbly circle */}
         <div
           style={{
-            width: 52,
-            height: 52,
+            width: 40,
+            height: 40,
             background: "#fff9c4",
             border: "2px solid #2d2d2d",
             borderRadius: "50% 45% 52% 44% / 44% 52% 45% 50%",
@@ -115,7 +115,7 @@ function FeatureCard({
             flexShrink: 0,
           }}
         >
-          <Icon size={24} strokeWidth={2.5} color="#2d2d2d" />
+          <Icon size={20} strokeWidth={2.5} color="#2d2d2d" />
         </div>
 
         <div>
@@ -124,7 +124,7 @@ function FeatureCard({
               fontFamily: "Kalam, cursive",
               fontWeight: 700,
               color: "#2d2d2d",
-              fontSize: "20px",
+              fontSize: "16px",
               marginBottom: 6,
             }}
           >
@@ -134,8 +134,8 @@ function FeatureCard({
             style={{
               fontFamily: "Patrick Hand, cursive",
               color: "rgba(45,45,45,0.75)",
-              fontSize: "16px",
-              lineHeight: 1.5,
+              fontSize: "13px",
+              lineHeight: 1.4,
             }}
           >
             {desc}
@@ -148,7 +148,7 @@ function FeatureCard({
 
 export function FeaturesSection() {
   return (
-    <section id="funcionalidades" className="py-20 max-w-6xl mx-auto px-4">
+    <section id="funcionalidades" className="py-12 md:py-20 max-w-6xl mx-auto px-4">
       {/* Label */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -171,7 +171,7 @@ export function FeaturesSection() {
             display: "inline-block",
           }}
         >
-          A solução ✅
+          O que você vai aprender ✅
         </div>
       </motion.div>
 
@@ -182,9 +182,9 @@ export function FeaturesSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.1 }}
         style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d" }}
-        className="text-4xl md:text-5xl mb-12"
+        className="text-3xl md:text-5xl mb-6 md:mb-12"
       >
-        O Mapa da Carne resolve tudo isso
+        O Mapa da Carne te ensina o que ninguém nunca te contou
       </motion.h2>
 
       {/* Cards grid */}
@@ -193,7 +193,7 @@ export function FeaturesSection() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid md:grid-cols-3 gap-8"
+        className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8"
       >
         {FEATURES.map((feature, i) => (
           <FeatureCard key={i} {...feature} />

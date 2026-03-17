@@ -24,7 +24,7 @@ export function WobblyButton({
 
   const bgMap = { accent: "#ff4d4d", muted: "#e5e0d8" };
   const textMap = { accent: "#fff", muted: "#2d2d2d" };
-  const sizeMap = { sm: "px-4 py-2 text-base", md: "px-6 py-3 text-lg", lg: "px-8 py-4 text-xl" };
+  const sizeMap = { sm: "px-3 py-1.5 text-sm md:px-4 md:py-2 md:text-base", md: "px-4 py-2.5 text-base md:px-6 md:py-3 md:text-lg", lg: "px-5 py-3 text-base md:px-8 md:py-4 md:text-xl" };
 
   return (
     <button

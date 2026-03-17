@@ -1,22 +1,19 @@
-import { motion } from "framer-motion";
 import { WobblyButton } from "./WobblyButton";
+import { ScrollReveal } from "./ScrollReveal";
 
 export function CTASection() {
   return (
-    <section id="cta" className="py-20 px-4">
+    <section id="cta" className="py-12 md:py-20 px-4">
       <div className="max-w-2xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+        <ScrollReveal direction="up" delay={0} duration={800}>
+        <div
           style={{
             background: "#fff9c4",
             border: "3px dashed #2d2d2d",
             borderRadius: "200px 25px 180px 20px / 20px 200px 25px 180px",
             boxShadow: "8px 8px 0px 0px #2d2d2d",
             transform: "rotate(-0.5deg)",
-            padding: "56px 40px",
+            padding: "32px 24px",
             textAlign: "center",
           }}
         >
@@ -28,9 +25,9 @@ export function CTASection() {
               lineHeight: 1.2,
               marginBottom: 16,
             }}
-            className="text-4xl md:text-5xl"
+            className="text-3xl md:text-5xl"
           >
-            Comece a escolher carne como um especialista 🥩
+            Vire o especialista em carne da sua família 🥩
           </h2>
 
           <p
@@ -41,19 +38,22 @@ export function CTASection() {
               marginBottom: 32,
             }}
           >
-            Grátis para começar. Sem cartão de crédito.
+            Você aprende de verdade. O conhecimento é seu pra sempre. Acesso vitalício por apenas R$9,90. Pague uma vez, use para sempre.
           </p>
 
           <div className="flex justify-center">
             <WobblyButton
               variant="accent"
               size="lg"
+              onClick={() => window.open("https://www.ggcheckout.com/checkout/v3/ZGHlTiJZ08FrjoEDUaHU", "_blank")}
               borderRadius="255px 15px 225px 15px / 15px 255px 15px 225px"
+              className="w-full sm:w-auto whitespace-nowrap"
             >
-              Experimentar Grátis Agora →
+              Começar por R$9,90 vitalício →
             </WobblyButton>
           </div>
-        </motion.div>
+        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

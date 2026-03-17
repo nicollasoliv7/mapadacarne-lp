@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 
 const STEPS = [
@@ -9,15 +10,15 @@ const STEPS = [
   },
   {
     number: "2",
-    emoji: "🤖",
-    title: "A IA analisa tudo",
-    desc: "Nossa IA identifica o corte, avalia o preço e sugere o preparo ideal",
+    emoji: "🧠",
+    title: "O Mapa explica o porquê",
+    desc: "O app não só identifica o corte e avalia o preço — ele te conta o raciocínio por trás pra você entender, não só seguir",
   },
   {
     number: "3",
-    emoji: "✅",
-    title: "Compra certa, preparo perfeito",
-    desc: "Você economiza, aprende e nunca mais erra na carne",
+    emoji: "🎓",
+    title: "Você aprende e não precisa mais perguntar",
+    desc: "Em semanas, você vai ao açougue com confiança, escolhe o corte certo e sabe avaliar o preço sem abrir o app",
   },
 ];
 
@@ -65,7 +66,7 @@ export function HowItWorksSection() {
         borderTop: "3px dashed #2d2d2d",
         borderBottom: "3px dashed #2d2d2d",
       }}
-      className="py-20"
+      className="py-12 md:py-20"
     >
       <div className="max-w-6xl mx-auto px-4">
         {/* Title */}
@@ -75,9 +76,9 @@ export function HowItWorksSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d" }}
-          className="text-4xl md:text-5xl mb-16 text-center"
+          className="text-3xl md:text-5xl mb-8 md:mb-16 text-center"
         >
-          Simples assim 👇
+          Da primeira dúvida ao domínio total 👇
         </motion.h2>
 
         {/* Steps with squiggly arrows between them */}
@@ -89,10 +90,10 @@ export function HowItWorksSection() {
           className="grid md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-4 items-start"
         >
           {STEPS.map((step, i) => (
-            <>
-              <StepCard key={`step-${i}`} {...step} />
-              {i < STEPS.length - 1 && <SquigglyArrow key={`arrow-${i}`} />}
-            </>
+            <React.Fragment key={i}>
+              <StepCard {...step} />
+              {i < STEPS.length - 1 && <SquigglyArrow />}
+            </React.Fragment>
           ))}
         </motion.div>
       </div>
@@ -114,13 +115,13 @@ function StepCard({
   return (
     <motion.div
       variants={itemVariants}
-      className="flex flex-col items-center text-center gap-4"
+      className="flex flex-col items-center text-center gap-3"
     >
       {/* Number circle */}
       <div
         style={{
-          width: 80,
-          height: 80,
+          width: 64,
+          height: 64,
           background: "white",
           border: "3px solid #2d2d2d",
           borderRadius: "50% 45% 52% 44% / 44% 52% 45% 50%",
@@ -130,7 +131,7 @@ function StepCard({
           justifyContent: "center",
           fontFamily: "Kalam, cursive",
           fontWeight: 700,
-          fontSize: "32px",
+          fontSize: "26px",
           color: "#ff4d4d",
           flexShrink: 0,
           position: "relative",
