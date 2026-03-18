@@ -1,4 +1,5 @@
-  import { CountdownBanner } from "@/components/landing/CountdownBanner";
+"use client";
+import { CountdownBanner } from "@/components/landing/CountdownBanner";
 import { Navbar } from "@/components/landing/Navbar";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { ProblemSection } from "@/components/landing/ProblemSection";
