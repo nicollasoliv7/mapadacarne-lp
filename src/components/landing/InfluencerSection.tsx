@@ -48,7 +48,7 @@ export function InfluencerSection() {
                 {/* Photo */}
                 <div
                   style={{
-                    height: 420,
+                    height: 460,
                     overflow: "hidden",
                     position: "relative",
                     background: "#e5e0d8",
@@ -62,7 +62,7 @@ export function InfluencerSection() {
                       width: "100%",
                       height: "100%",
                       objectFit: "cover",
-                      objectPosition: "top center",
+                      objectPosition: "center 32%",
                       display: "block",
                     }}
                   />
@@ -87,30 +87,18 @@ export function InfluencerSection() {
                     background: "white",
                   }}
                 >
-                  {/* Name — ✏️ troque pelo nome real */}
                   <h3
                     style={{
                       fontFamily: "Kalam, cursive",
                       fontWeight: 700,
                       color: "#2d2d2d",
                       fontSize: 26,
-                      marginBottom: 2,
+                      marginBottom: 14,
                       lineHeight: 1.1,
                     }}
                   >
-                    [Nome da Influencer]
+                    Rafa
                   </h3>
-                  {/* Handle — ✏️ troque pelo @handle real */}
-                  <p
-                    style={{
-                      fontFamily: "Patrick Hand, cursive",
-                      color: "#e05555",
-                      fontSize: 15,
-                      marginBottom: 14,
-                    }}
-                  >
-                    @[handle]
-                  </p>
 
                   {/* Identity tags */}
                   <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
@@ -301,8 +289,7 @@ export function InfluencerSection() {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  {/* ✏️ troque pelo nome real */}
-                  ♡ A Açougueira
+                  ♡ Rafa
                 </span>
                 <div
                   style={{
