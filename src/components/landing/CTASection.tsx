@@ -18,6 +18,27 @@ export function CTASection() {
             textAlign: "center",
           }}
         >
+          {/* Influencer credit — ✏️ PREENCHA com o nome real */}
+          <div
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              background: "#e05555",
+              color: "#fff",
+              border: "2px solid #2d2d2d",
+              borderRadius: "20px",
+              boxShadow: "3px 3px 0px 0px #2d2d2d",
+              padding: "5px 16px",
+              fontFamily: "Patrick Hand, cursive",
+              fontSize: "15px",
+              marginBottom: 16,
+            }}
+          >
+            <span style={{ fontSize: 18 }}>🥩</span>
+            com a Açougueira
+          </div>
+
           <h2
             style={{
               fontFamily: "Kalam, cursive",
@@ -28,7 +49,7 @@ export function CTASection() {
             }}
             className="text-3xl md:text-5xl"
           >
-            Vire o especialista em carne da sua família 🥩
+            Aprenda com ela. Domine o açougue. 🥩
           </h2>
 
           <p
@@ -39,7 +60,7 @@ export function CTASection() {
               marginBottom: 32,
             }}
           >
-            Você aprende de verdade. O conhecimento é seu pra sempre. Acesso vitalício por apenas R$9,90. Pague uma vez, use para sempre.
+            Comigo, você aprende o que aprendi crescendo dentro de um açougue — qual corte escolher, se o preço tá justo e como preparar do jeito certo. Acesso vitalício por apenas R$9,90. Pague uma vez, use para sempre.
           </p>
 
           <div className="flex justify-center">

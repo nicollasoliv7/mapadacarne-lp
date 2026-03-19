@@ -11,8 +11,31 @@ export function HeroSection() {
       <div className="grid md:grid-cols-2 items-center gap-8 md:gap-12">
         {/* Left side */}
         <div className="flex flex-col gap-4 md:gap-6">
-          {/* Sticky note tag */}
+          {/* Influencer badge */}
           <ScrollReveal direction="left" delay={0} className="self-start">
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 8,
+                background: "#e05555",
+                color: "#fff",
+                border: "2px solid #2d2d2d",
+                borderRadius: "20px",
+                boxShadow: "3px 3px 0px 0px #2d2d2d",
+                padding: "5px 14px",
+                fontFamily: "Patrick Hand, cursive",
+                fontSize: "14px",
+              }}
+            >
+              <span style={{ fontSize: 16 }}>🥩</span>
+              {/* ✏️ PREENCHA com "com a @[handle]" */}
+              com a Açougueira
+            </div>
+          </ScrollReveal>
+
+          {/* Sticky note tag */}
+          <ScrollReveal direction="left" delay={80} className="self-start">
             <div
               style={{
                 fontFamily: "Patrick Hand, cursive",
@@ -27,12 +50,12 @@ export function HeroSection() {
                 display: "inline-block",
               }}
             >
-              📚 Aprenda de verdade. Não dependa.
+              📚 Aprenda comigo. De verdade.
             </div>
           </ScrollReveal>
 
           {/* Headline */}
-          <ScrollReveal direction="left" delay={150}>
+          <ScrollReveal direction="left" delay={180}>
             <h1
               style={{
                 fontFamily: "Kalam, cursive",
@@ -42,12 +65,12 @@ export function HeroSection() {
               }}
               className="text-4xl md:text-6xl"
             >
-              Nunca mais desperdice dinheiro com carne ruim 🥩
+              Pare de ir ao açougue no chute 🥩
             </h1>
           </ScrollReveal>
 
           {/* Subheadline */}
-          <ScrollReveal direction="left" delay={300}>
+          <ScrollReveal direction="left" delay={320}>
             <p
               style={{
                 fontFamily: "Patrick Hand, cursive",
@@ -56,12 +79,12 @@ export function HeroSection() {
                 lineHeight: 1.5,
               }}
             >
-              Fotografe ou pergunte — receba a explicação de qual corte escolher e por quê. Você entende de verdade, vai ao açougue com confiança e para de depender de chute.
+              Fotografe ou pergunte — comigo, você entende qual corte levar, se o preço tá justo e como arrasar no preparo. Sem depender de chute, sem depender de ninguém.
             </p>
           </ScrollReveal>
 
           {/* Buttons */}
-          <ScrollReveal direction="left" delay={450}>
+          <ScrollReveal direction="left" delay={480}>
             <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
               <WobblyButton
                 variant="accent"

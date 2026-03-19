@@ -70,7 +70,7 @@ export function ProblemSection() {
         style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d" }}
         className="text-3xl md:text-5xl mb-6 md:mb-12"
       >
-        O problema é simples: ninguém te ensinou sobre carne.
+        O problema é simples: ninguém te ensinou sobre carne — mas eu vou mudar isso.
       </motion.h2>
 
       {/* Cards grid */}
