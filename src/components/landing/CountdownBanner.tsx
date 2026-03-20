@@ -25,26 +25,24 @@ export function CountdownBanner() {
         background: "#e03030",
         color: "#fff",
         textAlign: "center",
-        padding: "10px 16px",
+        padding: "8px 16px",
         fontFamily: "Patrick Hand, cursive",
-        fontSize: "16px",
+        fontSize: "14px",
         lineHeight: 1.4,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexWrap: "wrap",
+        gap: "4px 10px",
       }}
     >
-      <span>⏰ Oferta válida <strong>só hoje</strong>! Encerra em: </span>
-      <span
-        style={{
-          fontFamily: "Kalam, cursive",
-          fontWeight: 700,
-          fontSize: "18px",
-          letterSpacing: "0.05em",
-          background: "rgba(0,0,0,0.2)",
-          borderRadius: "6px",
-          padding: "2px 8px",
-          display: "inline-block",
-        }}
-      >
-        {h}:{m}:{s}
+      <span>🥩 <strong>4.800 pessoas</strong> já descobriram o perfil —{" "}
+        <span style={{ fontFamily: "Kalam, cursive", fontWeight: 700, fontSize: "15px", textDecoration: "underline" }}>
+          faça o quiz grátis!
+        </span>
+      </span>
+      <span style={{ opacity: 0.85, fontSize: 13, whiteSpace: "nowrap" }}>
+        ⏰ {h}:{m}:{s}
       </span>
     </div>
   );
