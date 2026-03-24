@@ -118,7 +118,7 @@ export function SavingsCalculator({ onOpenQuiz }: Props) {
             lineHeight: 1.2,
           }}
         >
-          Quanto você joga fora no açougue todo mês?
+          Quanto você deixa de economizar no açougue todo mês?
         </h3>
       </div>
 
