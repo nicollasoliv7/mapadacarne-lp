@@ -16,8 +16,8 @@ const PROFILES: Profile[] = [
     key: "a",
     icon: "🥩",
     title: {
-      m: "O Novato no Açougue",
-      f: "A Novata no Açougue",
+      m: "O Novato Perdido no Açougue",
+      f: "A Novata Perdida no Açougue",
     },
     description: {
       m: "Você compra por impulso ou pela sugestão do atendente — e sai sem saber se fez um bom negócio. O Mapa da Carne foi feito exatamente pra você: um guia visual que te diz o nome de cada corte, pra que serve e como pedir com segurança.",
@@ -601,7 +601,7 @@ export function ResultPage({ name, profileKey, onClose }: ResultPageProps) {
                   marginBottom: 20,
                 }}
               >
-                🥩 com a Açougueira
+                🥩 de quem entende de corte
               </div>
 
               <h2

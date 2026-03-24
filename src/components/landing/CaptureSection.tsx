@@ -27,7 +27,7 @@ export function CaptureSection({ onOpenQuiz }: CaptureSectionProps) {
               padding: "5px 14px",
               fontFamily: "Patrick Hand, cursive", fontSize: "14px",
             }}>
-              <span>🥩</span> com a Açougueira
+              <span>🥩</span> de quem entende de corte
             </div>
           </ScrollReveal>
 

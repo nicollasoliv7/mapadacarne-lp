@@ -30,7 +30,7 @@ export function HeroSection() {
             >
               <span style={{ fontSize: 16 }}>🥩</span>
               {/* ✏️ PREENCHA com "com a @[handle]" */}
-              com a Açougueira
+              de quem entende de corte
             </div>
           </ScrollReveal>
 

@@ -234,7 +234,7 @@ export function QuizFunnel({ onClose, onComplete }: QuizFunnelProps) {
           <div style={{ overflowY: "auto", flex: 1, padding: "48px 20px 24px", display: "flex", flexDirection: "column", gap: 16, textAlign: "center" }}>
             <span style={{ fontSize: 48 }}>🥩</span>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#e05555", color: "#fff", border: "2px solid #2d2d2d", borderRadius: "20px", boxShadow: "3px 3px 0px 0px #2d2d2d", padding: "4px 14px", fontFamily: "Patrick Hand, cursive", fontSize: "13px", margin: "0 auto" }}>
-              Quiz da Açougueira · só 2 minutos
+              Quiz do Mapa da Carne · só 2 minutos
             </div>
             <h2 style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d", fontSize: "clamp(22px, 6vw, 30px)", lineHeight: 1.2, margin: 0 }}>
               Vamos descobrir seu perfil de comprador de carnes

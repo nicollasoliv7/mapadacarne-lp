@@ -40,7 +40,7 @@ export function CTASection({ onOpenQuiz }: CTASectionProps) {
             }}
           >
             <span style={{ fontSize: 18 }}>🥩</span>
-            com a Açougueira
+            de quem entende de corte
           </div>
 
           <h2
