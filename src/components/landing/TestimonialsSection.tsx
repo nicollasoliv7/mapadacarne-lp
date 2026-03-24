@@ -45,7 +45,7 @@ function InstagramDMCard({
           border: "2px solid #2d2d2d",
           borderRadius: "20px",
           overflow: "hidden",
-          boxShadow: "4px 4px 0px 0px #2d2d2d",
+          boxShadow: "2px 2px 0px 0px rgba(45,45,45,0.15)",
           background: "#fff",
           maxWidth: 320,
           margin: "0 auto",
@@ -273,10 +273,10 @@ export function TestimonialsSection() {
         <div
           style={{
             fontFamily: "Patrick Hand, cursive",
-            background: "#fff9c4",
+            background: "#fffef0",
             border: "2px solid #2d2d2d",
             borderRadius: "2px 12px 2px 10px / 10px 2px 12px 2px",
-            boxShadow: "3px 3px 0px 0px #2d2d2d",
+            boxShadow: "2px 2px 0px 0px rgba(45,45,45,0.12)",
             transform: "rotate(-1deg)",
             padding: "4px 14px",
             fontSize: "15px",

@@ -318,7 +318,7 @@ export function QuizFunnel({ onClose, onComplete }: QuizFunnelProps) {
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
               <label style={{ fontFamily: "Patrick Hand, cursive", fontSize: 14, color: "#2d2d2d" }} htmlFor="quiz-name">Seu nome</label>
               <input
-                id="quiz-name" type="text" placeholder="Ex: Maria"
+                id="quiz-name" type="text" placeholder="Digite seu nome aqui"
                 value={name} onChange={(e) => setName(e.target.value)} required
                 style={{ fontFamily: "Patrick Hand, cursive", fontSize: 17, padding: "12px 14px", border: "2.5px solid #2d2d2d", borderRadius: "12px", outline: "none", background: "#fff", color: "#2d2d2d", boxShadow: "2px 2px 0px 0px #e5e0d8" }}
               />

@@ -46,10 +46,10 @@ export function ProblemSection() {
         <div
           style={{
             fontFamily: "Patrick Hand, cursive",
-            background: "#fff9c4",
+            background: "#fffef0",
             border: "2px solid #2d2d2d",
             borderRadius: "2px 12px 2px 10px / 10px 2px 12px 2px",
-            boxShadow: "3px 3px 0px 0px #2d2d2d",
+            boxShadow: "2px 2px 0px 0px rgba(45,45,45,0.12)",
             transform: "rotate(-1deg)",
             padding: "4px 14px",
             fontSize: "15px",
@@ -103,12 +103,12 @@ function ProblemCard({
   return (
     <motion.div
       variants={itemVariants}
-      whileHover={{ rotate: 0, boxShadow: "6px 6px 0px 0px #2d2d2d" }}
+      whileHover={{ rotate: 0, boxShadow: "3px 3px 0px 0px rgba(45,45,45,0.18)" }}
       style={{
-        background: "#fff9c4",
+        background: "#fffef0",
         border: "2px solid #2d2d2d",
         borderRadius: radius,
-        boxShadow: "4px 4px 0px 0px #2d2d2d",
+        boxShadow: "2px 2px 0px 0px rgba(45,45,45,0.15)",
         transform: rotation,
         padding: "20px 16px",
         position: "relative",
