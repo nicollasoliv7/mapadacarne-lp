@@ -10,7 +10,7 @@ interface CaptureSectionProps {
 export function CaptureSection({ onOpenQuiz }: CaptureSectionProps) {
   return (
     <section
-      style={{ minHeight: "100dvh", display: "flex", alignItems: "center" }}
+      style={{ minHeight: "100dvh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative" }}
       className="max-w-6xl mx-auto px-4 py-6 md:py-20"
     >
       <div className="grid md:grid-cols-2 items-center gap-8 md:gap-16 w-full">
@@ -83,6 +83,37 @@ export function CaptureSection({ onOpenQuiz }: CaptureSectionProps) {
           <SavingsCalculator onOpenQuiz={onOpenQuiz} />
         </ScrollReveal>
 
+      </div>
+
+      {/* ── Indicador de scroll ── */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 24,
+          left: "50%",
+          transform: "translateX(-50%)",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 4,
+          opacity: 0.45,
+          pointerEvents: "none",
+        }}
+      >
+        <style>{`
+          @keyframes scrollBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(7px); }
+          }
+        `}</style>
+        <span style={{ fontFamily: "Patrick Hand, cursive", fontSize: 13, color: "#2d2d2d", whiteSpace: "nowrap" }}>
+          role para ver mais
+        </span>
+        <div style={{ animation: "scrollBounce 1.5s ease-in-out infinite" }}>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M12 5v14M5 15l7 7 7-7" stroke="#2d2d2d" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
       </div>
     </section>
   );

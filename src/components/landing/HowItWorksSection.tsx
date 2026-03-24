@@ -7,7 +7,7 @@ const STEPS = [
     number: "1",
     emoji: "📝",
     title: "Faça o quiz grátis",
-    desc: "Responda 5 perguntas rápidas sobre como você compra carne hoje. Leva menos de 2 minutos e já mostra onde você está errando.",
+    desc: "Responda 4 perguntas rápidas sobre como você compra carne hoje. Leva menos de 2 minutos e já mostra onde você está errando.",
   },
   {
     number: "2",

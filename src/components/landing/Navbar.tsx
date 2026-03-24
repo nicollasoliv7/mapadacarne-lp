@@ -64,7 +64,7 @@ export function Navbar() {
             onClick={() => window.open("https://www.ggcheckout.com/checkout/v3/ZGHlTiJZ08FrjoEDUaHU", "_blank")}
             borderRadius="255px 15px 225px 15px / 15px 225px 15px 255px"
           >
-            R$9,90 vitalício
+            Começar por R$14,90
           </WobblyButton>
         </div>
 
@@ -109,7 +109,7 @@ export function Navbar() {
             className="w-full mt-2"
             borderRadius="15px 255px 15px 225px / 225px 15px 255px 15px"
           >
-            R$9,90 vitalício
+            Começar por R$14,90
           </WobblyButton>
         </div>
       )}
