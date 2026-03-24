@@ -16,8 +16,8 @@ const PROFILES: Profile[] = [
     key: "a",
     icon: "🥩",
     title: {
-      m: "O Perdido no Açougue",
-      f: "A Perdida no Açougue",
+      m: "O Novato no Açougue",
+      f: "A Novata no Açougue",
     },
     description: {
       m: "Você compra por impulso ou pela sugestão do atendente — e sai sem saber se fez um bom negócio. O Mapa da Carne foi feito exatamente pra você: um guia visual que te diz o nome de cada corte, pra que serve e como pedir com segurança.",
@@ -69,7 +69,7 @@ const PROFILES: Profile[] = [
     },
     description: {
       m: "Você quer o pacote completo: escolher bem, pagar justo e preparar perfeito. O Mapa da Carne é exatamente isso — um sistema completo que te transforma de confuso em confiante no açougue.",
-      f: "Você quer o pacote completo: escolher bem, pagar justo e preparar perfeito. O Mapa da Carne é exatamente isso — um sistema completo que te transforma de perdida em confiante no açougue.",
+      f: "Você quer o pacote completo: escolher bem, pagar justo e preparar perfeito. O Mapa da Carne é exatamente isso — um sistema completo que te transforma de iniciante em especialista no açougue.",
     },
     pain: {
       m: "Você já sabe que há muito a aprender — e está cansado de depender de chute. Quer dominar de vez: corte certo, preço justo, preparo perfeito.",
