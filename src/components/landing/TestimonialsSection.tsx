@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 
 const TESTIMONIALS = [
   {
-    quote: "cara passei VERGONHA no açougue antes do app kkk o atendente perguntou qual corte eu queria e eu travei completamente 😂 uma semana usando o mapa e já sei tudo. nunca mais!",
-    time: "há 3 dias",
+    quote: "cara nunca mais fui no açougue no chute kkkk antes deixava o atendente me convencer de qualquer coisa. agora já chego sabendo exatamente o que quero, o preço certo e fico no orçamento. salvou meu bolso de verdade 🙌",
+    time: "há 2 dias",
     rotation: "rotate(1deg)",
   },
   {
-    quote: "fui no açougue SOZINHA pela primeira vez e sabia exatamente o que pedir!! nem precisei ligar pro meu marido rsrs melhor app que já instalei, obrigada demais ❤️",
-    time: "há 1 semana",
+    quote: "estava com medo de ir sozinha no açougue mas depois que aprendi com a rafa virei expert kkkk sabia o corte, o preço certo e ainda como preparar. meu marido não acreditou 😂❤️ melhor coisa que instalei",
+    time: "há 4 dias",
     rotation: "rotate(-1.5deg)",
   },
   {
-    quote: "fiz o churrasco do domingo e todo mundo perguntou o que eu tinha feito diferente. aprendi os cortes certos pra brasa e ficou perfeito. valeu demais!",
-    time: "há 5 dias",
+    quote: "fiz as contas e tô economizando uns R$80 por mês só comprando melhor. o app já se pagou umas 8x. e o churrasco do fim de semana ficou o melhor que eu já fiz na vida — todo mundo pediu a receita",
+    time: "há 1 semana",
     rotation: "rotate(0.8deg)",
   },
 ];
@@ -284,7 +284,7 @@ export function TestimonialsSection() {
             display: "inline-block",
           }}
         >
-          Quem já aprendeu conta 💬
+          O que mandam pra mim 💬
         </div>
       </motion.div>
 
@@ -296,7 +296,7 @@ export function TestimonialsSection() {
         style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d" }}
         className="text-3xl md:text-5xl mb-8 md:mb-16"
       >
-        As mensagens que chegam pra mim todo dia 📱
+        Olha o que chega no meu direct todo dia 📱
       </motion.h2>
 
       {/* Cards grid */}

@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 const STEPS = [
   {
     number: "1",
-    emoji: "📷",
-    title: "Fotografe ou descreva",
-    desc: "Tire uma foto da carne ou descreva o que você quer cozinhar",
+    emoji: "📝",
+    title: "Faça o quiz grátis",
+    desc: "Responda 5 perguntas rápidas sobre como você compra carne hoje. Leva menos de 2 minutos e já mostra onde você está errando.",
   },
   {
     number: "2",
     emoji: "🧠",
-    title: "O Mapa explica o porquê",
-    desc: "O app não só identifica o corte e avalia o preço — ele te conta o raciocínio por trás pra você entender, não só seguir",
+    title: "Descubra onde você perde dinheiro",
+    desc: "Você vê exatamente o que não sabe ainda, quanto pode estar jogando fora — e qual é o próximo passo certo pra você.",
   },
   {
     number: "3",
     emoji: "🎓",
-    title: "Você aprende e não precisa mais perguntar",
-    desc: "Em semanas, você vai ao açougue com confiança, escolhe o corte certo e sabe avaliar o preço sem abrir o app",
+    title: "Domine o açougue pra sempre",
+    desc: "Com o Mapa da Carne, você vai ao açougue com confiança: sabe o que pedir, avalia o preço e prepara do jeito que acerta sempre.",
   },
 ];
 
@@ -79,7 +79,7 @@ export function HowItWorksSection() {
           style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d" }}
           className="text-3xl md:text-5xl mb-8 md:mb-16 text-center"
         >
-          Da primeira dúvida ao domínio total 👇
+          Como funciona — é simples assim 👇
         </motion.h2>
 
         {/* Steps with squiggly arrows between them */}

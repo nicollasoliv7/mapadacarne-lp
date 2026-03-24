@@ -50,7 +50,7 @@ export function HeroSection() {
                 display: "inline-block",
               }}
             >
-              📚 Aprenda comigo. De verdade.
+              ⚡ Quiz grátis · só 2 minutinhos
             </div>
           </ScrollReveal>
 
@@ -65,7 +65,7 @@ export function HeroSection() {
               }}
               className="text-4xl md:text-6xl"
             >
-              Pare de ir ao açougue no chute 🥩
+              Você gasta mais do que devia no açougue — e provavelmente nem percebe.
             </h1>
           </ScrollReveal>
 
@@ -79,7 +79,7 @@ export function HeroSection() {
                 lineHeight: 1.5,
               }}
             >
-              Fotografe ou pergunte — comigo, você entende qual corte levar, se o preço tá justo e como arrasar no preparo. Sem depender de chute, sem depender de ninguém.
+              Comigo, você descobre onde está errando, aprende qual corte levar, se o preço tá justo e como preparar do jeito que acerta sempre. Tudo começa com um quiz rápido e grátis.
             </p>
           </ScrollReveal>
 
@@ -89,11 +89,11 @@ export function HeroSection() {
               <WobblyButton
                 variant="accent"
                 size="lg"
-                onClick={() => window.open("https://www.ggcheckout.com/checkout/v3/ZGHlTiJZ08FrjoEDUaHU", "_blank")}
+                onClick={() => window.open("#quiz", "_self")}
                 borderRadius="255px 15px 225px 15px / 15px 225px 15px 255px"
                 className="w-full sm:w-auto justify-center"
               >
-                Começar por R$9,90 vitalício →
+                Fazer o quiz grátis →
               </WobblyButton>
               <WobblyButton
                 variant="muted"

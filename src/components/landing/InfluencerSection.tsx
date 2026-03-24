@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 export function InfluencerSection() {
   return (
     <section
+      id="sobre-a-ferramenta"
       style={{
         background: "#fdf6f0",
         borderTop: "3px dashed #2d2d2d",
@@ -187,7 +188,7 @@ export function InfluencerSection() {
                   display: "inline-block",
                 }}
               >
-                Quem sou eu? 👇
+                Quem vai te ensinar 👇
               </div>
             </ScrollReveal>
 
@@ -202,7 +203,7 @@ export function InfluencerSection() {
                 }}
                 className="text-3xl md:text-4xl"
               >
-                Cresci dentro de um açougue. Agora vou te ensinar tudo. 🔪
+                Cresci dentro de um açougue. O que aprendi lá, agora é seu. 🔪
               </h2>
             </ScrollReveal>
 
@@ -238,7 +239,7 @@ export function InfluencerSection() {
                 >
                   "
                 </span>
-                Cresci vendo meu pai escolher cada corte, negociar o preço certo e preparar do jeito que poucos sabem. Vi gente demais sendo enganada no açougue — e decidi mudar isso. Comigo, você aprende de verdade.
+                Desde criança vi meu pai trabalhar com carne do jeito certo — escolhendo com critério, sabendo o preço justo e preparando do jeito que impressiona qualquer um. Vi gente demais sendo enganada no açougue. Resolvi mudar isso. Comigo, você aprende de uma vez, de verdade.
               </blockquote>
             </ScrollReveal>
 
@@ -252,11 +253,11 @@ export function InfluencerSection() {
                   lineHeight: 1.6,
                 }}
               >
-                Tenho 26 anos, sou filha de açougueiro e vivo rodeada de carne
-                desde sempre. Criei o Mapa da Carne pra que você nunca mais
-                chegue no açougue sem saber o que está comprando —{" "}
+                Tenho 26 anos, sou filha de açougueiro e cresci literalmente
+                entre cortes, facas e muita carne boa. Criei o Mapa da Carne
+                pra acabar com o achismo na hora de comprar —{" "}
                 <strong style={{ color: "#2d2d2d" }}>
-                  comigo, esse conhecimento é seu pra sempre.
+                  comigo, você nunca mais chega no açougue de mãos abanando.
                 </strong>
               </p>
             </ScrollReveal>

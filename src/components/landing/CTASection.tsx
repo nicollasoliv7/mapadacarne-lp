@@ -2,7 +2,11 @@
 import { WobblyButton } from "./WobblyButton";
 import { ScrollReveal } from "./ScrollReveal";
 
-export function CTASection() {
+interface CTASectionProps {
+  onOpenQuiz?: () => void;
+}
+
+export function CTASection({ onOpenQuiz }: CTASectionProps) {
   return (
     <section id="cta" className="py-12 md:py-20 px-4">
       <div className="max-w-2xl mx-auto">
@@ -49,7 +53,7 @@ export function CTASection() {
             }}
             className="text-3xl md:text-5xl"
           >
-            Aprenda com ela. Domine o açougue. 🥩
+            Chega de gastar mais do que precisa. Aprenda a comprar carne do jeito certo.
           </h2>
 
           <p
@@ -60,18 +64,18 @@ export function CTASection() {
               marginBottom: 32,
             }}
           >
-            Comigo, você aprende o que aprendi crescendo dentro de um açougue — qual corte escolher, se o preço tá justo e como preparar do jeito certo. Acesso vitalício por apenas R$9,90. Pague uma vez, use para sempre.
+            Comigo, você aprende de uma vez por todas — qual corte escolher, como avaliar se o preço tá justo e como preparar do jeito que acerta sempre. Acesso vitalício por apenas R$9,90. Pague uma vez, use para sempre.
           </p>
 
           <div className="flex justify-center">
             <WobblyButton
               variant="accent"
               size="lg"
-              onClick={() => window.open("https://www.ggcheckout.com/checkout/v3/ZGHlTiJZ08FrjoEDUaHU", "_blank")}
+              onClick={onOpenQuiz}
               borderRadius="255px 15px 225px 15px / 15px 255px 15px 225px"
               className="w-full sm:w-auto whitespace-nowrap"
             >
-              Começar por R$9,90 vitalício →
+              Começar o quiz grátis →
             </WobblyButton>
           </div>
         </div>

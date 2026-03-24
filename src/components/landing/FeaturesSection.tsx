@@ -6,43 +6,43 @@ import { LucideIcon } from "lucide-react";
 const FEATURES = [
   {
     Icon: Bot,
-    title: "Assistente IA",
-    desc: "Pergunte o que quiser e entenda o porquê — não só o quê. Cada resposta te deixa mais inteligente.",
+    title: "Assistente Inteligente",
+    desc: "Tire qualquer dúvida em segundos: qual corte levar, se o preço tá bom, como preparar. Resposta certeira na hora — sem precisar depender de ninguém.",
     rotation: "rotate(1deg)",
     radius: "255px 15px 225px 15px / 15px 225px 15px 255px",
   },
   {
     Icon: Map,
     title: "Mapa de Cortes",
-    desc: "Aprenda a reconhecer e nomear cada corte brasileiro de cabeça — sem precisar consultar nada.",
+    desc: "Aprenda de uma vez a reconhecer e nomear cada corte brasileiro. Nunca mais chegue no açougue sem saber o que está pedindo.",
     rotation: "rotate(-1deg)",
     radius: "15px 255px 15px 225px / 225px 15px 255px 15px",
   },
   {
     Icon: DollarSign,
     title: "Detector de Preço",
-    desc: "Descubra se o preço tá justo e entenda como avaliar — pra você saber sozinho na próxima vez.",
+    desc: "Descubra na hora se o preço tá justo — ou se estão te passando a perna. Quem tem esse conhecimento economiza toda semana, toda visita ao açougue.",
     rotation: "rotate(1deg)",
     radius: "200px 25px 180px 20px / 20px 180px 25px 200px",
   },
   {
     Icon: Camera,
     title: "Scanner de Carne",
-    desc: "Fotografe no açougue, receba a análise e aprenda a ler a carne com os próprios olhos.",
+    desc: "Fotografe no açougue e receba: nome do corte, avaliação do preço e o melhor jeito de preparar. Você compra com olhos abertos, nunca mais no escuro.",
     rotation: "rotate(-1deg)",
     radius: "255px 15px 225px 15px / 15px 225px 15px 255px",
   },
   {
     Icon: ChefHat,
     title: "Guias de Preparo",
-    desc: "Domine as técnicas certas pra cada corte — churrasco, forno, air fryer. Você aprende, não segue receita cega.",
+    desc: "Cada corte tem a técnica certa. Aprenda de uma vez — do churrasco ao air fryer — e nunca mais sirva uma carne que decepciona.",
     rotation: "rotate(1deg)",
     radius: "15px 255px 15px 225px / 225px 15px 255px 15px",
   },
   {
     Icon: BookOpen,
     title: "Biblioteca de Carnes",
-    desc: "Construa seu vocabulário de carne uma vez e use para sempre — origem, usos e características de cada corte.",
+    desc: "Tudo sobre cada corte num só lugar. Quanto mais você usa, mais aprende — e menos precisa adivinhar ou depender de palpite.",
     rotation: "rotate(-1deg)",
     radius: "200px 25px 180px 20px / 20px 180px 25px 200px",
   },
@@ -172,7 +172,7 @@ export function FeaturesSection() {
             display: "inline-block",
           }}
         >
-          O que você vai aprender ✅
+          O que você aprende comigo ✅
         </div>
       </motion.div>
 
@@ -185,7 +185,7 @@ export function FeaturesSection() {
         style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d" }}
         className="text-3xl md:text-5xl mb-6 md:mb-12"
       >
-        O Mapa da Carne te ensina o que ninguém nunca te contou
+        Pare de adivinhar. Comece a saber de verdade.
       </motion.h2>
 
       {/* Cards grid */}

@@ -9,7 +9,7 @@ export function CountdownBanner() {
 
   useEffect(() => {
     const id = setInterval(() => {
-      ref.current = Math.max(0, ref.current - 1);
+      ref.current = ref.current <= 1 ? TOTAL_SECONDS : ref.current - 1;
       setRemaining(ref.current);
     }, 1000);
     return () => clearInterval(id);
@@ -28,23 +28,21 @@ export function CountdownBanner() {
         padding: "10px 16px",
         fontFamily: "Patrick Hand, cursive",
         fontSize: "16px",
-        lineHeight: 1.4,
+        lineHeight: 1.45,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexWrap: "wrap",
+        gap: "4px 10px",
       }}
     >
-      <span>⏰ Oferta válida <strong>só hoje</strong>! Encerra em: </span>
-      <span
-        style={{
-          fontFamily: "Kalam, cursive",
-          fontWeight: 700,
-          fontSize: "18px",
-          letterSpacing: "0.05em",
-          background: "rgba(0,0,0,0.2)",
-          borderRadius: "6px",
-          padding: "2px 8px",
-          display: "inline-block",
-        }}
-      >
-        {h}:{m}:{s}
+      <span>🥩 <strong>4.800 pessoas</strong> já descobriram o perfil —{" "}
+        <span style={{ fontFamily: "Kalam, cursive", fontWeight: 700, fontSize: "17px", textDecoration: "underline" }}>
+          faça o quiz grátis!
+        </span>
+      </span>
+      <span style={{ opacity: 0.9, fontSize: 15, whiteSpace: "nowrap" }}>
+        ⏰ {h}:{m}:{s}
       </span>
     </div>
   );
