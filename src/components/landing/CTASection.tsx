@@ -64,7 +64,7 @@ export function CTASection({ onOpenQuiz }: CTASectionProps) {
               marginBottom: 32,
             }}
           >
-            Comigo, você aprende de uma vez por todas — qual corte escolher, como avaliar se o preço tá justo e como preparar do jeito que acerta sempre. Acesso vitalício por apenas R$9,90. Pague uma vez, use para sempre.
+            Comigo, você aprende de uma vez por todas — qual corte escolher, como avaliar se o preço tá justo e como preparar do jeito que acerta sempre.
           </p>
 
           <div className="flex justify-center">

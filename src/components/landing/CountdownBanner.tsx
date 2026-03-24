@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 
-const TOTAL_SECONDS = 12 * 60 + 10;
+const TOTAL_SECONDS = 15 * 60;
 
 export function CountdownBanner() {
   const [remaining, setRemaining] = useState(TOTAL_SECONDS);
@@ -36,13 +36,11 @@ export function CountdownBanner() {
         gap: "4px 10px",
       }}
     >
-      <span>🥩 <strong>4.800 pessoas</strong> já descobriram o perfil —{" "}
-        <span style={{ fontFamily: "Kalam, cursive", fontWeight: 700, fontSize: "17px", textDecoration: "underline" }}>
-          faça o quiz grátis!
-        </span>
+      <span style={{ fontFamily: "Kalam, cursive", fontWeight: 700, fontSize: "17px", textDecoration: "underline" }}>
+        Quiz grátis — descubra seu perfil agora!
       </span>
       <span style={{ opacity: 0.9, fontSize: 15, whiteSpace: "nowrap" }}>
-        ⏰ {h}:{m}:{s}
+        ⏰ {m}:{s}
       </span>
     </div>
   );

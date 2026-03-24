@@ -50,11 +50,11 @@ export default function LandingPage() {
       )}
       <CountdownBanner />
       <CaptureSection onOpenQuiz={() => setQuizOpen(true)} />
+      <TestimonialsSection />
       <InfluencerSection />
       <ProblemSection />
       <FeaturesSection />
       <HowItWorksSection />
-      <TestimonialsSection />
       <CTASection onOpenQuiz={() => setQuizOpen(true)} />
       <Footer />
       <ProgressiveBlur />

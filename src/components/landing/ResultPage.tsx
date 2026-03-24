@@ -626,7 +626,7 @@ export function ResultPage({ name, profileKey, onClose }: ResultPageProps) {
                   marginBottom: 24,
                 }}
               >
-                Mapa completo, guia de preços, como preparar cada corte e checklist de compra. Você paga uma vez e usa para sempre.
+                Mapa completo, guia de preços, como preparar cada corte e checklist de compra. Tudo que você precisa pra nunca mais errar no açougue.
               </p>
 
               <p style={{ fontFamily: "Patrick Hand, cursive", fontSize: 18, color: "#888", margin: "0 0 4px" }}>
@@ -642,10 +642,10 @@ export function ResultPage({ name, profileKey, onClose }: ResultPageProps) {
                   lineHeight: 1,
                 }}
               >
-                R$ 9,90
+                R$ 14,90
               </p>
               <p style={{ fontFamily: "Patrick Hand, cursive", fontSize: 17, color: "#888", marginBottom: 24 }}>
-                Uma vez só. Sem mensalidade. Sem renovação.
+                acesso imediato · pagamento seguro
               </p>
 
               <WobblyButton
@@ -656,7 +656,7 @@ export function ResultPage({ name, profileKey, onClose }: ResultPageProps) {
                 className="w-full"
                 style={{ fontSize: "clamp(17px, 3.5vw, 21px)" }}
               >
-                Quero o Mapa da Carne por R$9,90 →
+                Quero o Mapa da Carne por R$14,90 →
               </WobblyButton>
 
               <p style={{ fontFamily: "Patrick Hand, cursive", fontSize: 16, color: "#aaa", marginTop: 12 }}>
