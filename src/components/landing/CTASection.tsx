@@ -53,7 +53,7 @@ export function CTASection({ onOpenQuiz }: CTASectionProps) {
             }}
             className="text-3xl md:text-5xl"
           >
-            Chega de gastar mais do que precisa. Aprenda a comprar carne do jeito certo. 🥩
+            Chega de gastar mais do que precisa. Aprenda a comprar carne do jeito certo.
           </h2>
 
           <p

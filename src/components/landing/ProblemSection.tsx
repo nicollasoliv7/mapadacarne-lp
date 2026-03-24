@@ -4,19 +4,19 @@ import { motion } from "framer-motion";
 const PROBLEMS = [
   {
     emoji: "😰",
-    text: "Chegou no açougue sem saber qual corte levar — e ninguém nunca te ensinou a diferença",
+    text: "Entrou no açougue sem saber o que pedir de verdade — e acabou levando o que o atendente sugeriu, sem questionar",
     rotation: "rotate(1deg)",
     radius: "255px 15px 225px 15px / 15px 225px 15px 255px",
   },
   {
     emoji: "💸",
-    text: "Pagou caro sem entender se o preço estava justo — porque avaliar carne não se aprende por osmose",
+    text: "Pagou o preço pedido sem ter ideia se estava fazendo um bom negócio — ou simplesmente sendo enrolado",
     rotation: "rotate(-1deg)",
     radius: "15px 255px 15px 225px / 225px 15px 255px 15px",
   },
   {
     emoji: "🍖",
-    text: "Errou no preparo e a carne ficou dura — porque ninguém explica qual técnica funciona pra cada corte",
+    text: "A carne ficou dura, sem sabor ou seca — mesmo seguindo a receita certinho, sem entender por quê deu errado",
     rotation: "rotate(1deg)",
     radius: "200px 25px 180px 20px / 20px 180px 25px 200px",
   },
@@ -57,7 +57,7 @@ export function ProblemSection() {
             display: "inline-block",
           }}
         >
-          O problema 😰
+          Você se identifica? 😬
         </div>
       </motion.div>
 
@@ -70,7 +70,7 @@ export function ProblemSection() {
         style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d" }}
         className="text-3xl md:text-5xl mb-6 md:mb-12"
       >
-        O problema é simples: ninguém te ensinou sobre carne — mas eu vou mudar isso.
+        Se pelo menos um desses já aconteceu com você, o quiz foi feito pra você.
       </motion.h2>
 
       {/* Cards grid */}
