@@ -135,7 +135,7 @@ function FeatureCard({
             style={{
               fontFamily: "Patrick Hand, cursive",
               color: "rgba(45,45,45,0.75)",
-              fontSize: "13px",
+              fontSize: "15px",
               lineHeight: 1.4,
             }}
           >

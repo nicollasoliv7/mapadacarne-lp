@@ -450,7 +450,7 @@ export function ResultPage({ name, profileKey, onClose }: ResultPageProps) {
                 }}>
                   <span style={{
                     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-                    fontSize: 11, color: "#aaa",
+                    fontSize: 13, color: "#aaa",
                   }}>
                     Mensagem direta · usuário oculto por privacidade
                   </span>

@@ -221,7 +221,7 @@ function InstagramDMCard({
             <span
               style={{
                 fontFamily: "system-ui, sans-serif",
-                fontSize: 11,
+                fontSize: 13,
                 color: "#8e8e8e",
               }}
             >
@@ -242,11 +242,11 @@ function InstagramDMCard({
             gap: 5,
           }}
         >
-          <span style={{ fontSize: 11 }}>🔒</span>
+          <span style={{ fontSize: 13 }}>🔒</span>
           <p
             style={{
               fontFamily: "system-ui, sans-serif",
-              fontSize: 10,
+              fontSize: 13,
               color: "#8e8e8e",
               margin: 0,
             }}

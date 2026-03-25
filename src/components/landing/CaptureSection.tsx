@@ -25,7 +25,7 @@ export function CaptureSection({ onOpenQuiz }: CaptureSectionProps) {
               border: "2px solid #2d2d2d", borderRadius: "20px",
               boxShadow: "3px 3px 0px 0px #2d2d2d",
               padding: "5px 14px",
-              fontFamily: "Patrick Hand, cursive", fontSize: "14px",
+              fontFamily: "Patrick Hand, cursive", fontSize: "16px",
             }}>
               <span>🥩</span> de quem entende de corte
             </div>
@@ -106,7 +106,7 @@ export function CaptureSection({ onOpenQuiz }: CaptureSectionProps) {
             50% { transform: translateY(7px); }
           }
         `}</style>
-        <span style={{ fontFamily: "Patrick Hand, cursive", fontSize: 13, color: "#2d2d2d", whiteSpace: "nowrap" }}>
+        <span style={{ fontFamily: "Patrick Hand, cursive", fontSize: 15, color: "#2d2d2d", whiteSpace: "nowrap" }}>
           role para ver mais
         </span>
         <div style={{ animation: "scrollBounce 1.5s ease-in-out infinite" }}>

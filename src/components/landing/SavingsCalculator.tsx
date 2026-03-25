@@ -82,7 +82,7 @@ export function SavingsCalculator({ onOpenQuiz }: Props) {
         background: active ? "#e05555" : "#fff",
         color: active ? "#fff" : "#2d2d2d",
         fontFamily: "Patrick Hand, cursive",
-        fontSize: 14,
+        fontSize: 16,
         cursor: "pointer",
         boxShadow: active ? "2px 2px 0px 0px #2d2d2d" : "none",
         transition: "all 0.15s ease",

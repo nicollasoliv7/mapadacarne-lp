@@ -109,7 +109,7 @@ export function InfluencerSection() {
                           key={tag}
                           style={{
                             fontFamily: "Patrick Hand, cursive",
-                            fontSize: 12,
+                            fontSize: 14,
                             color: "#2d2d2d",
                             background: "#fff9c4",
                             border: "1.5px solid #2d2d2d",
@@ -145,7 +145,7 @@ export function InfluencerSection() {
                   alignItems: "center",
                   gap: 6,
                   fontFamily: "Patrick Hand, cursive",
-                  fontSize: 13,
+                  fontSize: 15,
                   color: "#2d2d2d",
                   transform: "rotate(3deg)",
                   zIndex: 20,

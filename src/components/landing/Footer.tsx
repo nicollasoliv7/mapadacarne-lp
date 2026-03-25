@@ -79,7 +79,7 @@ export function Footer() {
             style={{
               fontFamily: "Patrick Hand, cursive",
               color: "rgba(45,45,45,0.55)",
-              fontSize: "14px",
+              fontSize: "16px",
             }}
           >
             © 2025 Mapa da Carne

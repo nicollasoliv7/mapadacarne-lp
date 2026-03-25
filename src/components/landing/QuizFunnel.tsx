@@ -114,7 +114,7 @@ function ProgressBar({ current, total }: { current: number; total: number }) {
       <p
         style={{
           fontFamily: "Patrick Hand, cursive",
-          fontSize: 13,
+          fontSize: 15,
           color: "#888",
           marginTop: 4,
           textAlign: "right",
@@ -233,7 +233,7 @@ export function QuizFunnel({ onClose, onComplete }: QuizFunnelProps) {
         {step === 0 && (
           <div style={{ overflowY: "auto", flex: 1, padding: "48px 20px 24px", display: "flex", flexDirection: "column", gap: 16, textAlign: "center" }}>
             <span style={{ fontSize: 48 }}>🥩</span>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#e05555", color: "#fff", border: "2px solid #2d2d2d", borderRadius: "20px", boxShadow: "3px 3px 0px 0px #2d2d2d", padding: "4px 14px", fontFamily: "Patrick Hand, cursive", fontSize: "13px", margin: "0 auto" }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#e05555", color: "#fff", border: "2px solid #2d2d2d", borderRadius: "20px", boxShadow: "3px 3px 0px 0px #2d2d2d", padding: "4px 14px", fontFamily: "Patrick Hand, cursive", fontSize: "15px", margin: "0 auto" }}>
               Quiz do Mapa da Carne · só 2 minutos
             </div>
             <h2 style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d", fontSize: "clamp(22px, 6vw, 30px)", lineHeight: 1.2, margin: 0 }}>
@@ -260,14 +260,14 @@ export function QuizFunnel({ onClose, onComplete }: QuizFunnelProps) {
             <div style={{ overflowY: "auto", flex: 1, padding: "48px 20px 12px", display: "flex", flexDirection: "column", gap: 14 }}>
               <ProgressBar current={step} total={4} />
               <div style={{ background: "#fff9c4", border: "2px solid #2d2d2d", borderRadius: "10px", boxShadow: "2px 2px 0px 0px #2d2d2d", padding: "4px 12px", display: "inline-block", alignSelf: "flex-start" }}>
-                <span style={{ fontFamily: "Patrick Hand, cursive", fontSize: 13, color: "#2d2d2d" }}>
+                <span style={{ fontFamily: "Patrick Hand, cursive", fontSize: 15, color: "#2d2d2d" }}>
                   {STEPS[step - 1].emoji} Pergunta {step}
                 </span>
               </div>
               <h3 style={{ fontFamily: "Kalam, cursive", fontWeight: 700, color: "#2d2d2d", fontSize: "clamp(19px, 5vw, 24px)", lineHeight: 1.25, margin: 0 }}>
                 {STEPS[step - 1].question}
               </h3>
-              <p style={{ fontFamily: "Patrick Hand, cursive", color: "#888", fontSize: 14, margin: 0 }}>
+              <p style={{ fontFamily: "Patrick Hand, cursive", color: "#888", fontSize: 16, margin: 0 }}>
                 {STEPS[step - 1].subtitle}
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
@@ -316,14 +316,14 @@ export function QuizFunnel({ onClose, onComplete }: QuizFunnelProps) {
               Coloca seu nome abaixo para receber seu perfil personalizado.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-              <label style={{ fontFamily: "Patrick Hand, cursive", fontSize: 14, color: "#2d2d2d" }} htmlFor="quiz-name">Seu nome</label>
+              <label style={{ fontFamily: "Patrick Hand, cursive", fontSize: 16, color: "#2d2d2d" }} htmlFor="quiz-name">Seu nome</label>
               <input
                 id="quiz-name" type="text" placeholder="Digite seu nome aqui"
                 value={name} onChange={(e) => setName(e.target.value)} required
                 style={{ fontFamily: "Patrick Hand, cursive", fontSize: 17, padding: "12px 14px", border: "2.5px solid #2d2d2d", borderRadius: "12px", outline: "none", background: "#fff", color: "#2d2d2d", boxShadow: "2px 2px 0px 0px #e5e0d8" }}
               />
             </div>
-            <p style={{ fontFamily: "Patrick Hand, cursive", fontSize: 12, color: "#aaa", textAlign: "center", margin: 0 }}>
+            <p style={{ fontFamily: "Patrick Hand, cursive", fontSize: 14, color: "#aaa", textAlign: "center", margin: 0 }}>
               🔒 Só seu nome — nada mais.
             </p>
             <WobblyButton variant="accent" size="lg" borderRadius="255px 15px 225px 15px / 15px 255px 15px 225px" className="w-full" style={{ opacity: submitting ? 0.7 : 1 }}>

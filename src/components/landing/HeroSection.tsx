@@ -25,10 +25,10 @@ export function HeroSection() {
                 boxShadow: "3px 3px 0px 0px #2d2d2d",
                 padding: "5px 14px",
                 fontFamily: "Patrick Hand, cursive",
-                fontSize: "14px",
+                fontSize: "16px",
               }}
             >
-              <span style={{ fontSize: 16 }}>🥩</span>
+              <span style={{ fontSize: 18 }}>🥩</span>
               {/* ✏️ PREENCHA com "com a @[handle]" */}
               de quem entende de corte
             </div>
