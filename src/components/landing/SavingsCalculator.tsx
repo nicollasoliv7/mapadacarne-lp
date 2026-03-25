@@ -213,17 +213,15 @@ export function SavingsCalculator({ onOpenQuiz }: Props) {
 
       {/* Placeholder antes de selecionar os dois */}
       {!showResult && (
-        <div
-          style={{
-            background: "#fff",
-            border: "2px dashed #ccc",
-            borderRadius: 12,
-            padding: "20px 16px",
-            textAlign: "center",
-          }}
-        >
-          <p style={{ fontSize: 17, color: "#bbb", margin: 0 }}>
-            👆 Selecione as opções acima para ver o resultado
+        <div style={{ textAlign: "center", padding: "10px 0 4px" }}>
+          <p style={{
+            fontFamily: "Patrick Hand, cursive",
+            fontSize: 16,
+            color: "rgba(45,45,45,0.38)",
+            margin: 0,
+            letterSpacing: "0.01em",
+          }}>
+            👆 escolha acima pra ver o resultado
           </p>
         </div>
       )}
