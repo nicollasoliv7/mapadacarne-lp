@@ -12,6 +12,7 @@ import { Footer } from "@/components/landing/Footer";
 import { ProgressiveBlur } from "@/components/landing/ProgressiveBlur";
 import { QuizFunnel } from "@/components/landing/QuizFunnel";
 import { ResultPage } from "@/components/landing/ResultPage";
+import { BackRedirectHandler } from "@/components/landing/BackRedirectHandler";
 
 export default function LandingPage() {
   const [quizOpen, setQuizOpen] = useState(false);
@@ -24,11 +25,14 @@ export default function LandingPage() {
 
   if (result) {
     return (
-      <ResultPage
-        name={result.name}
-        profileKey={result.profileKey}
-        onClose={() => setResult(null)}
-      />
+      <>
+        <BackRedirectHandler />
+        <ResultPage
+          name={result.name}
+          profileKey={result.profileKey}
+          onClose={() => setResult(null)}
+        />
+      </>
     );
   }
 
@@ -42,6 +46,7 @@ export default function LandingPage() {
         overflowX: "hidden",
       }}
     >
+      <BackRedirectHandler />
       {quizOpen && (
         <QuizFunnel
           onClose={() => setQuizOpen(false)}
